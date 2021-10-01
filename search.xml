@@ -21,7 +21,10 @@
   <entry>
     <title>My New Post</title>
     <url>/2021/09/30/My-New-Post/</url>
-    <content><![CDATA[<p>test test</p>
+    <content><![CDATA[<h1 id="title-01"><a href="#title-01" class="headerlink" title="title_01"></a>title_01</h1><p>test test</p>
+<h1 id="YT-test"><a href="#YT-test" class="headerlink" title="YT test"></a>YT test</h1><div class="video-container"><iframe src="https://www.youtube.com/embed/EmbKlm0P5W0" frameborder="0" loading="lazy" allowfullscreen></iframe></div>
+
+<h1 id="Picture-test"><a href="#Picture-test" class="headerlink" title="Picture test"></a>Picture test</h1><p><img src="https://i.imgur.com/WDqHaZP.jpg" alt="klee"></p>
 ]]></content>
       <categories>
         <category>daily</category>
