@@ -5,12 +5,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Archive</title>
+    <title>google colab (1) connect to drive - Higuma&#39;s Note</title>
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="google" content="notranslate" />
     <meta name="keywords" content="Fechin,"> 
-    
+    <meta name="description" content="連結到Google Drive&amp;nbsp;
+12345from google.colab import authfrom oauth2client.client import GoogleCrede,"> 
     <meta name="author" content="Higumalu"> 
     <link rel="alternative" href="atom.xml" title="Higuma&#39;s Note" type="application/atom+xml"> 
     <link rel="icon" href="/img/favicon.png"> 
@@ -23,51 +24,85 @@
 <body class="loading">
     <span id="config-title" style="display:none">Higuma&#39;s Note</span>
     <div id="loader"></div>
-    <div id="single" class="page">
-    <div id="top">
-        <a class="iconfont icon-left image-icon" href="javascript:history.back()"></a>
-    </div>
-    <div class="section">
-        <div class="article">
-            <div class="main">
-                <div class="content">
-                    <div class="timeline">
-                      <h2 class="timeline-title">歸檔: 4篇</h2><hr>
-                      
-                      
-                        
-                          <h3 class="timeline-subtitle">2021</h3>
-                        
-                        <div class="timeline-item">
-                          <time>2021-10-07</time>
-                          <a target="_self" href="/2021/10/07/colab-2/">google colab (1) connect to drive</a>
-                        </div>
-                      
-                        
-                        <div class="timeline-item">
-                          <time>2021-10-05</time>
-                          <a target="_self" href="/2021/10/05/colab-1/">google colab (0) setting &amp; UI</a>
-                        </div>
-                      
-                        
-                        <div class="timeline-item">
-                          <time>2021-09-30</time>
-                          <a target="_self" href="/2021/09/30/My-New-Post/">My New Post</a>
-                        </div>
-                      
-                        
-                        <div class="timeline-item">
-                          <time>2021-09-30</time>
-                          <a target="_self" href="/2021/09/30/hello-world/">Hello World</a>
-                        </div>
-                      
-                    </div>
-                </div>
+    <div id="single">
+    <div id="top" style="display: block;">
+    <div class="bar" style="width: 0;"></div>
+    <a class="iconfont icon-home image-icon" href="javascript:;" data-url="http://higumalu.github.io"></a>
+    <div title="播放/暂停" class="iconfont icon-play"></div>
+    <h3 class="subtitle">google colab (1) connect to drive</h3>
+    <div class="social">
+        <div>
+            <div class="share">
+                <a title="获取二维码" class="iconfont icon-scan" href="javascript:;"></a>
             </div>
+            <div id="qr"></div>
         </div>
     </div>
+    <div class="scrollbar"></div>
 </div>
 
+    <div class="section">
+        <div class="article">
+    <div class='main'>
+        <h1 class="title">google colab (1) connect to drive</h1>
+        <div class="stuff">
+            <span>十月 07, 2021</span>
+            
+  <ul class="post-tags-list" itemprop="keywords"><li class="post-tags-list-item"><a class="post-tags-list-link" href="/tags/colab/" rel="tag">colab</a></li><li class="post-tags-list-item"><a class="post-tags-list-link" href="/tags/drive/" rel="tag">drive</a></li></ul>
+
+
+        </div>
+        <div class="content markdown">
+            <h3 id="連結到Google-Drive"><a href="#連結到Google-Drive" class="headerlink" title="連結到Google Drive"></a>連結到Google Drive</h3><p>&nbsp;</p>
+<figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> google.colab <span class="keyword">import</span> auth</span><br><span class="line"><span class="keyword">from</span> oauth2client.client <span class="keyword">import</span> GoogleCredentials</span><br><span class="line"></span><br><span class="line">auth.authenticate_user()</span><br><span class="line">credentials = GoogleCredentials.get_application_default()</span><br></pre></td></tr></table></figure>
+<p>&nbsp;<br>執行之後點連結會產生一段驗證碼<br>貼到下方的格子中Enter就能連接至自己的Google Drive了<br>&nbsp;<br><img src="https://i.imgur.com/BZjPkRd.png" alt="Imgur"></p>
+
+            <!--[if lt IE 9]><script>document.createElement('audio');</script><![endif]-->
+            <audio id="audio" loop="1" preload="auto" controls="controls" data-autoplay="false">
+                <source type="audio/mpeg" src="">
+            </audio>
+            
+                <ul id="audio-list" style="display:none">
+                    
+                        
+                            <li title='0' data-url='https://link.hhtjim.com/163/475521.mp3'></li>
+                        
+                    
+                        
+                            <li title='1' data-url='https://link.hhtjim.com/163/1867529146.mp3'></li>
+                        
+                    
+                        
+                            <li title='2' data-url='https://link.hhtjim.com/163/1860032684.mp3'></li>
+                        
+                    
+                        
+                            <li title='3' data-url='https://link.hhtjim.com/163/1326016489.mp3'></li>
+                        
+                    
+                </ul>
+            
+        </div>
+        
+    <div id='gitalk-container' class="comment link"
+		data-enable='false'
+        data-ae='false'
+        data-ci=''
+        data-cs=''
+        data-r=''
+        data-o=''
+        data-a=''
+        data-d='false'
+    >查看留言</div>
+
+
+    </div>
+    
+</div>
+
+
+    </div>
+</div>
 </body>
 
 

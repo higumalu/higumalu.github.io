@@ -52,4 +52,19 @@
         <tag>setting</tag>
       </tags>
   </entry>
+  <entry>
+    <title>google colab (1) connect to drive</title>
+    <url>/2021/10/07/colab-2/</url>
+    <content><![CDATA[<h3 id="連結到Google-Drive"><a href="#連結到Google-Drive" class="headerlink" title="連結到Google Drive"></a>連結到Google Drive</h3><p>&nbsp;</p>
+<figure class="highlight py"><table><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> google.colab <span class="keyword">import</span> auth</span><br><span class="line"><span class="keyword">from</span> oauth2client.client <span class="keyword">import</span> GoogleCredentials</span><br><span class="line"></span><br><span class="line">auth.authenticate_user()</span><br><span class="line">credentials = GoogleCredentials.get_application_default()</span><br></pre></td></tr></table></figure>
+<p>&nbsp;<br>執行之後點連結會產生一段驗證碼<br>貼到下方的格子中Enter就能連接至自己的Google Drive了<br>&nbsp;<br><img src="https://i.imgur.com/BZjPkRd.png" alt="Imgur"></p>
+]]></content>
+      <categories>
+        <category>colab</category>
+      </categories>
+      <tags>
+        <tag>colab</tag>
+        <tag>drive</tag>
+      </tags>
+  </entry>
 </search>
