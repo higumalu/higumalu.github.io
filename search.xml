@@ -76,4 +76,40 @@
 <p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
 ]]></content>
   </entry>
+  <entry>
+    <title>google colab (2) CNN classification model with custom dataset</title>
+    <url>/2021/10/09/colab-3/</url>
+    <content><![CDATA[<h2 id="目錄"><a href="#目錄" class="headerlink" title="目錄"></a>目錄</h2><ul>
+<li>資料上傳(Google Drive)</li>
+<li>資料預處理</li>
+<li>建立CNN model(keras)</li>
+<li>training</li>
+<li>predict</li>
+</ul>
+<h3 id="上傳資料至Drive"><a href="#上傳資料至Drive" class="headerlink" title="上傳資料至Drive"></a>上傳資料至Drive</h3><h3 id="資料預處理"><a href="#資料預處理" class="headerlink" title="資料預處理"></a>資料預處理</h3><h3 id="建立CNN分類模型"><a href="#建立CNN分類模型" class="headerlink" title="建立CNN分類模型"></a>建立CNN分類模型</h3>]]></content>
+      <categories>
+        <category>colab</category>
+      </categories>
+      <tags>
+        <tag>colab</tag>
+        <tag>drive</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>histogram practice with python</title>
+    <url>/2021/10/22/img-proc-1/</url>
+    <content><![CDATA[<h1 id="輸入影像並轉為灰階"><a href="#輸入影像並轉為灰階" class="headerlink" title="輸入影像並轉為灰階"></a>輸入影像並轉為灰階</h1><p>(單通道)</p>
+<figure class="highlight py"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> matplotlib.pyplot <span class="keyword">as</span> plt</span><br><span class="line"><span class="keyword">import</span> cv2</span><br><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"></span><br><span class="line">img = cv2.imread(<span class="string">&#x27;sono01.bmp&#x27;</span>)  <span class="comment"># input img</span></span><br><span class="line">gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)  <span class="comment">#cover2onechannel</span></span><br></pre></td></tr></table></figure>
+<h1 id="用calcHist函數計算直方圖"><a href="#用calcHist函數計算直方圖" class="headerlink" title="用calcHist函數計算直方圖"></a>用calcHist函數計算直方圖</h1><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">cv2.calcHist(影像, 通道, 遮罩, 區間數量, 數值範圍)</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight py"><table><tr><td class="code"><pre><span class="line">hist = cv2.calcHist([gray], <span class="literal">None</span>, <span class="literal">None</span>, [<span class="number">256</span>], [<span class="number">0</span>, <span class="number">256</span>])</span><br><span class="line">hist = np.ndarray.flatten(hist)</span><br></pre></td></tr></table></figure>
+
+
+<h1 id="輸出影像"><a href="#輸出影像" class="headerlink" title="輸出影像"></a>輸出影像</h1><figure class="highlight py"><table><tr><td class="code"><pre><span class="line">plt.figure(dpi=<span class="number">150</span>)</span><br><span class="line">plt.imshow(gray, plt.cm.gray)</span><br><span class="line">plt.show()</span><br><span class="line"></span><br><span class="line">plt.figure(dpi=<span class="number">150</span>)</span><br><span class="line">plt.bar(<span class="built_in">range</span>(<span class="number">1</span>,<span class="number">257</span>), hist)</span><br><span class="line">plt.show()</span><br></pre></td></tr></table></figure>]]></content>
+      <tags>
+        <tag>image processing</tag>
+        <tag>histogram</tag>
+        <tag>image</tag>
+      </tags>
+  </entry>
 </search>
